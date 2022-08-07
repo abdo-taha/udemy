@@ -12,6 +12,10 @@
         outline: none;
     }
     
+    .body {
+        min-width: 300px;
+    }
+    
     nav img {
         height: 34px;
     }
@@ -26,6 +30,8 @@
         height: 72px;
         box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
         align-content: center;
+        position: relative;
+        z-index: 1;
     }
     
     .logo {
@@ -186,15 +192,63 @@
         box-sizing: border-box;
     }
     
+    .main {
+        max-width: 1340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .header {
+        position: relative;
+    }
+    
+    .header img {
+        /* position: relative; */
+        max-width: 100%;
+    }
+    
+    .headerbox {
+        background-color: white;
+        max-width: 392px;
+        position: absolute;
+        top: 64px;
+        left: 72px;
+        padding: 24px;
+        box-sizing: unset;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    }
+    
+    .headerbox h1 {
+        padding-bottom: 12px;
+    }
+    
+    .headerbox p {
+        font-size: 19px;
+    }
+    
+    .headerimg {
+        overflow: hidden;
+    }
+    
     @media screen and (max-width: 1100px) {
         .business {
             display: none;
+        }
+        .headerbox {
+            max-width: 352px;
+            top: 24px;
+            left: 48px;
         }
     }
     
     @media screen and (max-width: 970px) {
         .teach {
             display: none;
+        }
+        .headerbox {
+            max-width: 292px;
+            top: 24px;
+            left: 48px;
         }
     }
     
@@ -238,5 +292,9 @@
         }
         .logo img {
             width: 75px;
+        }
+        .headerbox {
+            max-width: none;
+            position: unset;
         }
     }
