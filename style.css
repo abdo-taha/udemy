@@ -12,8 +12,10 @@
         outline: none;
     }
     
-    .body {
+    body {
         min-width: 300px;
+        /* remove hight */
+        height: 5000px;
     }
     
     nav img {
@@ -200,6 +202,7 @@
     
     .header {
         position: relative;
+        margin-bottom: 48px;
     }
     
     .header img {
@@ -230,6 +233,159 @@
         overflow: hidden;
     }
     
+    .courses-header {
+        padding: 0 24px;
+    }
+    
+    .courses-header-h1 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+    .courses-header-msg {
+        margin-top: 8px;
+        font-size: 19px;
+    }
+    
+    .topics {
+        padding: 0 24px;
+        display: flex;
+        height: 48px;
+        overflow: hidden;
+    }
+    
+    .topic-btn {
+        background-color: white;
+        border-style: none;
+        font-size: 17px;
+        font-weight: 700;
+        color: #6a6f73;
+        margin-right: 16px;
+        min-width: fit-content;
+    }
+    
+    .topic-btn:hover {
+        color: black;
+    }
+    
+    .topic-btn-active {
+        color: black;
+    }
+    
+    .courses-content {
+        padding: 32px;
+        border-width: 1px;
+        border-style: solid;
+        margin: 0 24px;
+        border-color: #d1d7dc;
+    }
+    
+    .courses-content-head h2 {
+        margin-bottom: 8px;
+    }
+    
+    .courses-content-head p {
+        max-width: 800px;
+        margin-bottom: 16px;
+    }
+    
+    .courses-content-head {
+        margin-bottom: 32px;
+    }
+    
+    .gnrl-btn {
+        text-decoration: none;
+        border-style: solid;
+        border-width: 1px;
+        padding: 10px;
+        display: inline-block;
+        /* margin-top: 10px; */
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .gnrl-btn:hover {
+        background-color: rgba(0, 0, 0, .04);
+    }
+    
+    .courses-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .course-item {
+        width: 232px;
+        height: 283px;
+        display: inline-flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .course-item h3 {
+        font-size: 16px;
+        margin-top: 8px;
+        margin-bottom: 4px;
+        max-height: 38px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .author {
+        font-size: 12px;
+        color: #1c1d1f;
+        margin-bottom: 4px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .star img {
+        height: 14px;
+    }
+    
+    .course-img {
+        height: 130.725px;
+        width: 230.4px;
+    }
+    
+    .rating {
+        display: flex;
+        margin-bottom: 4px;
+    }
+    
+    .rating-score {
+        color: #b4690e;
+        font-weight: 700;
+        margin-right: 4px;
+        font-size: 14px;
+    }
+    
+    .rating-n {
+        margin-left: 4px;
+        font-size: 12px;
+        color: #6a6f73;
+    }
+    
+    .price {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    
+    .bestseller {
+        background-color: #eceb98;
+        color: #3d3c0a;
+        padding: 4px 8px;
+        display: inline-block;
+        width: fit-content;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+    
     @media screen and (max-width: 1100px) {
         .business {
             display: none;
@@ -249,6 +405,9 @@
             max-width: 292px;
             top: 24px;
             left: 48px;
+        }
+        .courses-header-h1 {
+            font-size: 26px;
         }
     }
     
@@ -296,5 +455,24 @@
         .headerbox {
             max-width: none;
             position: unset;
+            box-shadow: none;
+        }
+        .headerbox h1 {
+            font-size: 26px;
+        }
+        .header {
+            margin-bottom: 24px;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .courses-header {
+            display: none;
+        }
+        .courses-content-head {
+            display: none;
+        }
+        .courses-list {
+            justify-content: center;
         }
     }
