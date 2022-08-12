@@ -36,7 +36,11 @@ const updateCourses = async(search) => {
 
     const coursesList = document.getElementsByClassName("courses-list")[0]
     coursesList.innerHTML = ""
-    const coursesData = await fetch(`http://localhost:3000/courses?title_like=${search}`).then(x => x.json())
+        /* change to local host*/
+    let url = "https://my-json-server.typicode.com/abdo-taha/udemy";
+    // let url =  "http://localhost:3000";
+
+    const coursesData = await fetch(`${url}/courses?title_like=${search}`).then(x => x.json())
     coursesData.forEach(element => {
         coursesList.appendChild(new DOMParser().parseFromString(courseItem(element), "text/html").body
             .firstElementChild)
