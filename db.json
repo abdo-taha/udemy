@@ -17,7 +17,33 @@
         },
         {
             "image": "https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg",
-            "title": "Personal Development"
+            "title": "Personal Development" <<
+                << << < HEAD ===
+                === =
+        },
+        {
+            "image": "https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg",
+            "title": "Business"
+        },
+        {
+            "image": "https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg",
+            "title": "Photography"
+        },
+        {
+            "image": "https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg",
+            "title": "Music"
+        }
+    ],
+    "courses": [{
+            "link": "https://www.udemy.com/course/pythonforbeginners/",
+            "title": "Learn Python: The Complete Python Programming Course",
+            "author": "Avinash Jain,The Codex",
+            "image": "https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg",
+            "price": 679.99,
+            "rating": 4.4,
+            "people": 2948,
+            "bestseller": false >>>
+                >>> > 3 aaedda101f53a1254b747fd7750c0db8fd7b994
         },
         {
             "image": "https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg",
@@ -1153,7 +1179,7 @@
                     "instructors": [{
                         "name": "Alan Rodrigues",
                         "jop": "Software Engineering Evangelist",
-                        "image": "https://img-b.udemycdn.com/user/100x100/25858272_3f5e_4.jpg"
+                        "image": "https://img-b.udemycdn.com/user/100x100/2,5858272_3f5e_4.jpg"
                     }],
                     "price": 16.99
                 },
