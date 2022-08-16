@@ -11,3 +11,5 @@ npm install -g json-server
 npx json-server --watch db.json
 ```
 
+### preview works online now thanks to this <a href ="https://my-json-server.typicode.com/">server</a>
+
