@@ -1,5 +1,5 @@
-let url = "https://my-json-server.typicode.com/abdo-taha/udemy";
-// let url = "http://localhost:3000";
+// let url = "https://my-json-server.typicode.com/abdo-taha/udemy";
+let url = "http://localhost:3000";
 
 const btns = {
     "btn-python": "python",
