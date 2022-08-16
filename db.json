@@ -17,9 +17,7 @@
         },
         {
             "image": "https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg",
-            "title": "Personal Development" <<
-                << << < HEAD ===
-                === =
+            "title": "Personal Development"
         },
         {
             "image": "https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg",
@@ -42,8 +40,7 @@
             "price": 679.99,
             "rating": 4.4,
             "people": 2948,
-            "bestseller": false >>>
-                >>> > 3 aaedda101f53a1254b747fd7750c0db8fd7b994
+            "bestseller": false
         },
         {
             "image": "https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg",
