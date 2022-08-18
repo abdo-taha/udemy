@@ -174,13 +174,7 @@ const mediaQuery = () => {
 }
 
 
-
-
-const main = async() => {
-    await updateCat();
-    btnsListeners();
-    await updateCourses(btns[activeBtn]);
-
+const searchBtn = () => {
     const searchButton = document.getElementById("search-button");
     const searchInput = document.getElementById("search-input")
 
@@ -188,6 +182,14 @@ const main = async() => {
         e.preventDefault();
         searchCourses(searchInput.value)
     })
+}
+
+const main = async() => {
+    await updateCat();
+    btnsListeners();
+    await updateCourses(btns[activeBtn]);
+
+    searchBtn();
     mediaQuery()
 }
 
