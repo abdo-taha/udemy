@@ -283,8 +283,9 @@
     .topics {
         padding: 0 24px;
         display: flex;
-        height: 48px;
-        overflow: hidden;
+        min-height: 48px;
+        /* overflow: hidden; */
+        flex-wrap: wrap;
     }
     
     .topic-btn {
